@@ -8,9 +8,9 @@ namespace ATM
 
         public void GoToChecking()
         {
-            char count = 'a';
+            char choise = 'a';
             var test = new CheckingAccount();
-            while (count !='e')
+            while (choise != 'e')
             {
                 Console.Clear();
                 Console.WriteLine("What do you want to do?");
@@ -18,7 +18,7 @@ namespace ATM
                 Console.WriteLine("Press d to Deposit");
                 Console.WriteLine("Press p to Print all transactions");
                 Console.WriteLine("Press e to exit");
-                char choise = Convert.ToChar(Console.ReadLine());
+                choise = Convert.ToChar(Console.ReadLine());
                 if (choise == 'w')
                 {
                     Console.Clear();
